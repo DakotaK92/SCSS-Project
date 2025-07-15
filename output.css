@@ -1,7 +1,137 @@
 body {
   color: hsl(228, 45%, 44%);
-  font-size: 11px;
+  background-color: lightgrey;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.pricing-container .title-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pricing-container .title-pricing h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: hsl(228, 45%, 44%);
+}
+.pricing-container .title-pricing p {
+  font-weight: 500;
+  color: hsl(228, 45%, 44%);
+}
+.pricing-container .title-pricing button {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  background-color: hsl(233, 13%, 49%);
+  border: none;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.main-container .basic-container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .basic-container span {
+  font-weight: 900;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.main-container .basic-container p {
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.main-container .basic-container button {
+  background: none;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.main-container .professional-container {
+  padding: 3rem;
+  background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .professional-container span {
+  font-weight: 900;
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+.main-container .professional-container p {
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+.main-container .professional-container button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.main-container .master-container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .master-container span {
+  font-weight: 900;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.main-container .master-container p {
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.main-container .master-container button {
+  background: none;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=output.css.map */
