@@ -1,6 +1,6 @@
 body {
   color: hsl(228, 45%, 44%);
-  background-color: lightgrey;
+  background-color: rgb(236, 236, 236);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   display: flex;
@@ -9,6 +9,16 @@ body {
   text-align: center;
   align-items: center;
   padding: 8rem;
+}
+body .topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .bottomLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .pricing-container {
@@ -22,7 +32,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  position: relative;
+  margin-bottom: 20px;
 }
 .pricing-container .title-pricing h1 {
   font-weight: 900;
@@ -30,16 +41,38 @@ body {
   color: hsl(228, 45%, 44%);
 }
 .pricing-container .title-pricing p {
-  font-weight: 500;
   color: hsl(228, 45%, 44%);
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem;
 }
-.pricing-container .title-pricing button {
-  width: 3rem;
-  height: 1.5rem;
-  border-radius: 10px;
-  background-color: hsl(233, 13%, 49%);
-  border: none;
+.pricing-container .title-pricing .button-container {
+  position: absolute;
+  width: 3.2rem;
+  height: 30px;
+  background: hsl(233, 13%, 49%);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
   cursor: pointer;
+}
+.pricing-container .title-pricing .button-container .active {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 50%;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.monthly, .annual {
+  display: none;
+}
+
+.monthly.active, .annual.active {
+  display: inline;
 }
 
 .main-container {
